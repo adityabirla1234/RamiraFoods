@@ -1,0 +1,10 @@
+# Keep the Docker build context small — don't send unnecessary files to Docker daemon
+
+target/
+*.iml
+.idea/
+.vscode/
+.git/
+.gitignore
+*.md
+*.log
