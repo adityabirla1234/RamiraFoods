@@ -31,7 +31,7 @@ RUN addgroup -S ramira && adduser -S ramira -G ramira
 # Copy only the fat JAR from the builder stage
 # ⚠️  If your artifactId or version differs, update the filename below.
 #     Check target/ after running `mvn package` — the JAR name is:
-#     <artifactId>-<version>.jar  (e.g. Ramira-foods-ms-0.0.1-SNAPSHOT.jar)
+#     <artifactId>-<version>.jar  (e.g. RamiraFoods-MS-0.0.1-SNAPSHOT.jar)
 COPY --from=builder /app/target/*.jar app.jar
 
 # Give ownership to the non-root user
